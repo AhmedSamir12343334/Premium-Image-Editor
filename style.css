@@ -329,15 +329,15 @@ input[type=range]:active::-webkit-slider-thumb {
     .container {
         display: flex;
         flex-direction: column;
-        padding: 20px;
-        gap: 20px;
+        padding: 15px;
+        gap: 15px;
         overflow: hidden;
     }
 
     .editor-area {
         height: auto;
         flex: 0 0 45%;
-        gap: 15px;
+        gap: 10px;
     }
 
     .canvas-wrapper {
@@ -348,7 +348,7 @@ input[type=range]:active::-webkit-slider-thumb {
         flex: 1;
         overflow-y: auto;
         max-height: none;
-        padding: 20px;
+        padding: 15px;
     }
 }
 
@@ -376,26 +376,32 @@ input[type=range]:active::-webkit-slider-thumb {
     }
 
     .editor-area {
-        flex: 0 0 50%;
-        gap: 10px;
+        flex: 1;
+        gap: 8px;
+        min-height: 0;
+    }
+
+    .canvas-wrapper {
+        min-height: 0;
+        height: 100%;
     }
 
     .actions {
         flex-direction: row;
-        gap: 8px;
+        gap: 6px;
     }
 
     .action-btn {
         width: auto;
         flex: 1;
-        padding: 8px 6px;
+        padding: 6px 4px;
         font-size: 13px;
         justify-content: center;
         gap: 4px;
     }
 
     .action-btn .material-symbols-outlined {
-        font-size: 18px;
+        font-size: 16px;
     }
 
     .upload-btn label {
@@ -406,32 +412,34 @@ input[type=range]:active::-webkit-slider-thumb {
     }
 
     .sidebar {
-        padding: 15px;
+        flex: 0 0 auto;
+        padding: 12px;
+        overflow: hidden;
     }
 
     .sidebar h2 {
-        display: flex;
-        font-size: 18px;
-        margin-bottom: 15px;
+        display: none;
     }
 
     .filters-list {
-        gap: 12px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 8px;
     }
 
     .filter-group {
-        gap: 8px;
-        padding: 12px 16px;
-        border-radius: 10px;
+        gap: 6px;
+        padding: 8px 10px;
+        border-radius: 8px;
     }
 
     .filter-info {
-        font-size: 14px;
+        font-size: 12px;
     }
 
     .value-display {
-        font-size: 11px;
-        padding: 3px 10px;
+        font-size: 10px;
+        padding: 2px 6px;
     }
 
     input[type=range] {
