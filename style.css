@@ -376,7 +376,7 @@ input[type=range]:active::-webkit-slider-thumb {
     }
 
     .editor-area {
-        flex: 1;
+        flex: 0 0 50%;
         gap: 8px;
         min-height: 0;
     }
@@ -412,9 +412,9 @@ input[type=range]:active::-webkit-slider-thumb {
     }
 
     .sidebar {
-        flex: 0 0 auto;
+        flex: 1;
         padding: 12px;
-        overflow: hidden;
+        overflow-y: auto;
     }
 
     .sidebar h2 {
